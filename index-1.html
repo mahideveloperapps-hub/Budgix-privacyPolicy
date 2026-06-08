@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy — Budgix</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+  :root { --primary: #5B6AF0; --green: #00C896; --dark: #0D0E1A; --card: #1E2040; --border: rgba(91,106,240,0.2); --text: #F0F0FF; --muted: #A8AACC; }
+  * { box-sizing: border-box; margin:0; padding:0; }
+  body { font-family:'Sora',sans-serif; background:var(--dark); color:var(--text); min-height:100vh; }
+
+  .hero {
+    background: linear-gradient(135deg, #4A90E2 0%, #6C3DE8 100%);
+    padding: 60px 24px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content:''; position:absolute; inset:0;
+    background: radial-gradient(ellipse at top, rgba(255,255,255,0.1) 0%, transparent 60%);
+  }
+  .hero .lock { font-size: 3.5rem; display:block; margin-bottom:16px; position:relative; }
+  .hero h1 { font-size: 2.4rem; font-weight:800; margin-bottom:8px; position:relative; }
+  .hero .subtitle { font-size:0.92rem; color:rgba(255,255,255,0.75); position:relative; }
+  .hero .date-badge {
+    display:inline-block; margin-top:16px;
+    background:rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius:20px; padding:5px 16px;
+    font-size:0.78rem; color:#fff;
+    position:relative;
+  }
+
+  .container { max-width:740px; margin:0 auto; padding:48px 24px 80px; }
+
+  .section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px;
+    margin-bottom: 20px;
+    transition: border-color 0.2s;
+  }
+  .section:hover { border-color: rgba(91,106,240,0.4); }
+
+  .section h2 {
+    font-size:1rem; font-weight:700;
+    color: var(--primary);
+    margin-bottom:14px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .section h2 .emoji { font-size:1.1rem; }
+
+  .section p { font-size:0.9rem; line-height:1.85; color:var(--muted); }
+  .section ul { padding-left:22px; margin-top:12px; }
+  .section li { font-size:0.9rem; line-height:1.85; color:var(--muted); margin-bottom:5px; }
+  .section li::marker { color: var(--primary); }
+
+  .highlight-box {
+    background: rgba(0,200,150,0.07);
+    border: 1px solid rgba(0,200,150,0.2);
+    border-radius:12px; padding:16px 18px;
+    margin-top:14px;
+    font-size:0.88rem; color:#90E8D0; line-height:1.7;
+  }
+
+  .contact-email {
+    display:inline-block; margin-top:12px;
+    color: var(--primary); font-weight:700;
+    font-size:1rem; text-decoration:none;
+    background: rgba(91,106,240,0.1);
+    border: 1px solid var(--border);
+    border-radius:10px; padding:10px 18px;
+  }
+  .contact-email:hover { background: rgba(91,106,240,0.2); }
+
+  .badge-updated {
+    display:inline-block; margin:32px 0 0;
+    background: rgba(0,200,150,0.1);
+    border:1px solid rgba(0,200,150,0.25);
+    border-radius:20px; padding:5px 16px;
+    font-size:0.78rem; color:var(--green);
+  }
+
+  .footer {
+    text-align:center; padding:32px 24px;
+    border-top:1px solid var(--border);
+    color:rgba(255,255,255,0.25); font-size:0.8rem; line-height:1.8;
+  }
+  .footer strong { color:rgba(255,255,255,0.4); }
+
+  @media(max-width:600px) {
+    .hero h1 { font-size:1.8rem; }
+    .container { padding:32px 16px 60px; }
+    .section { padding:20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <span class="lock">🔒</span>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Budgix — Smart Budget Tracker &nbsp;·&nbsp; MahiDeveloper</p>
+  <span class="date-badge">Effective Date: June 2026</span>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <h2><span class="emoji">📋</span> Overview</h2>
+    <p>Budgix ("the App") is developed and maintained by MahiDeveloper. This Privacy Policy describes how we handle information when you use our Android application. We are committed to protecting your privacy. By using Budgix, you agree to the practices described in this policy.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">🚫</span> No Data Collection</h2>
+    <p>Budgix does <strong style="color:#fff;">not collect, transmit, store, or share any personal data</strong> with us or any third party. The App operates entirely offline. Every piece of information you enter — including income amounts, expense records, categories, and notes — is stored exclusively on your own device.</p>
+    <ul>
+      <li>We do not collect your name, email address, or phone number</li>
+      <li>We do not access or collect your financial information</li>
+      <li>We do not track your location at any time</li>
+      <li>We do not use any analytics or crash reporting SDKs</li>
+      <li>We do not display any advertisements</li>
+      <li>We do not require an internet connection to function</li>
+      <li>We do not require account creation or login</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">📱</span> Local Storage Only</h2>
+    <p>All data entered into Budgix is stored locally on your Android device using the Room persistence library (SQLite database). This data never leaves your device and is never transmitted to any external server, cloud service, or third party.</p>
+    <div class="highlight-box">
+      ✓ &nbsp;If you uninstall the App, all locally stored transaction data is permanently and automatically deleted from your device.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">⚙️</span> App Preferences</h2>
+    <p>Budgix saves your theme preference (Light Mode or Dark Mode) using Android's SharedPreferences mechanism. This setting is stored locally on your device only and is never shared with or transmitted to any third party.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">🔐</span> Data Security</h2>
+    <p>Since all your data remains exclusively on your device, its security depends on your device's own security features — such as screen lock, PIN protection, or device encryption. We strongly recommend keeping your device secured. MahiDeveloper does not have access to your data at any time, under any circumstances.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">🌐</span> Internet Permissions</h2>
+    <p>Budgix does not request internet permission in its Android manifest. The App functions completely offline and does not make any network requests. Poppins fonts are loaded via Google Fonts provider on first use on devices with Google Play Services — this is handled by the OS, not the App, and no personal data is involved.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">👶</span> Children's Privacy</h2>
+    <p>Budgix is not directed at children under the age of 13. Because the App does not collect any personal information from any user whatsoever, it does not knowingly collect personal information from children. If you believe a child has provided personal information through this App, please contact us — though this is technically not possible given our no-collection design.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">🔄</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time as the App evolves. When we make changes, we will update the "Effective Date" at the top of this page and notify users through the App's update release notes on Google Play. Continued use of the App after any changes constitutes your acceptance of the updated Privacy Policy.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">📧</span> Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please feel free to contact us:</p>
+    <a href="mailto:mahideveloper.apps@gmail.com" class="contact-email">📨 mahideveloper.apps@gmail.com</a>
+    <p style="margin-top:14px; font-size:0.82rem;">We will respond to all privacy-related inquiries within a reasonable timeframe.</p>
+  </div>
+
+  <div style="text-align:center;">
+    <span class="badge-updated">✓ Last updated: June 2026 &nbsp;·&nbsp; Version 1.0</span>
+  </div>
+
+</div>
+
+<div class="footer">
+  <strong>Budgix — Smart Budget Tracker</strong><br/>
+  © 2026 MahiDeveloper. All rights reserved.<br/>
+  Package: com.mahideveloper.expense.budgix
+</div>
+
+</body>
+</html>
